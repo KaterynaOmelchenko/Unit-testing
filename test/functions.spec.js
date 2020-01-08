@@ -1,5 +1,5 @@
 const assert = require('assert');
-const {sum, mult, numberIsPositive} = require('../functions.js');
+const {sum, mult, numberIsPositive,numberIsNegative} = require('../functions.js');
 
 describe('function sum', () => {
     it('should summ of 2 and 4 equals 6 ', () => {
@@ -21,5 +21,15 @@ describe( 'function numberIsPositive', () => {
 
     it( 'should numberIsPositive for value -3 equal false', () => {
         assert.equal( numberIsPositive(-3), false );
+    })
+})
+
+describe( 'function numberIsNegative', () => {
+    it( 'should numberIsNegative for value -1 equal true', () => {
+        assert.equal( numberIsNegative(-1), true );
+    })
+
+    it( 'should numberIsNegative for value 4 equal false', () => {
+        assert.equal( numberIsNegative(4), false );
     })
 })

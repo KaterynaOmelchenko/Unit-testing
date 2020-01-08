@@ -7,4 +7,8 @@ function mult(a, b){
 function numberIsPositive(a){
     return a > 0;
 }
-module.exports = {sum, mult, numberIsPositive};
+function numberIsNegative(a){
+    return a < 0;
+}
+
+module.exports = {sum, mult, numberIsPositive, numberIsNegative};
