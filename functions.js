@@ -5,10 +5,12 @@ function mult(a, b){
     return a * b;
 }
 function numberIsPositive(a){
-    return a > 0;
+    if (typeof(a) === 'number') return a > 0;
+    else return undefined;
 }
-function numberIsNegative(a){
-    return a < 0;
+function numberIsNegative(a) {
+    if (typeof (a) === 'number') return a < 0;
+    else return undefined;
 }
 
 module.exports = {sum, mult, numberIsPositive, numberIsNegative};
