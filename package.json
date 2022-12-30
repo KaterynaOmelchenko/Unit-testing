@@ -21,7 +21,7 @@
   "homepage": "https://github.com/KaterynaOmelchenko/Unit-testing#readme",
   "dependencies": {
     "chai": "^4.2.0",
-    "mocha": "^7.0.0"
+    "mocha": "^10.2.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0"
